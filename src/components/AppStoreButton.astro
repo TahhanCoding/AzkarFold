@@ -1,0 +1,86 @@
+---
+export interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<a href="#" class={`app-store-button ${className}`} target="_blank" rel="noopener noreferrer">
+  <div class="button-content">
+    <div class="apple-logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.92997 12.4 4.69997 9.19C5.56997 7.61 7.12997 6.63 8.81997 6.61C10.1 6.57 11.3 7.5 12.11 7.5C12.92 7.5 14.37 6.41 15.92 6.61C16.54 6.63 18.38 6.86 19.55 8.33C19.47 8.39 17.82 9.35 17.84 11.53C17.87 14.03 19.91 14.85 19.94 14.87C19.9 14.99 19.56 16.18 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="button-text">
+      <div class="download-text">Download on the</div>
+      <div class="store-text">App Store</div>
+    </div>
+  </div>
+</a>
+
+<style>
+  .app-store-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-gray-900);
+    color: var(--color-white);
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-md);
+    border: 2px solid transparent;
+  }
+
+  .app-store-button:hover {
+    background-color: var(--color-gray-800);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    color: var(--color-white);
+  }
+
+  .button-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .apple-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .download-text {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    font-weight: 400;
+  }
+
+  .store-text {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .app-store-button {
+      padding: var(--space-4) var(--space-6);
+    }
+    
+    .download-text {
+      font-size: 0.875rem;
+    }
+    
+    .store-text {
+      font-size: 1.25rem;
+    }
+  }
+</style>

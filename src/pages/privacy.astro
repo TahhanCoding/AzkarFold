@@ -1,0 +1,290 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Privacy Policy - Azkar Fold" description="Privacy Policy for Azkar Fold - Learn how we protect your privacy and data">
+  <Navigation />
+  
+  <main class="privacy-page">
+    <div class="container">
+      <div class="privacy-content fade-in">
+        <h1>Privacy Policy for Azkar Fold</h1>
+        
+        <div class="last-updated">
+          <strong>Last updated:</strong> December 2024
+        </div>
+
+        <section class="privacy-section">
+          <h2>Our Commitment to Privacy</h2>
+          <p>
+            At Azkar Fold, we deeply respect your privacy and are committed to protecting your personal information. 
+            This Privacy Policy explains how our app handles your data and what measures we take to ensure your 
+            spiritual practice remains private and secure.
+          </p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Data Collection</h2>
+          <div class="highlight-box">
+            <h3>🔒 We do not collect any personal data</h3>
+            <p>
+              Azkar Fold does not collect, store, or transmit any personal information from your device. 
+              Your privacy is paramount to us, and we believe your spiritual practice should remain completely private.
+            </p>
+          </div>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Local Data Storage</h2>
+          <p>
+            All your data in Azkar Fold is stored locally on your device, including:
+          </p>
+          <ul class="privacy-list">
+            <li>Your custom azkar creations</li>
+            <li>Prayer count progress</li>
+            <li>App settings and preferences</li>
+            <li>Usage statistics (stored locally only)</li>
+          </ul>
+          <p>
+            This information never leaves your device and is not accessible to us or any third parties.
+          </p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Third-Party Services</h2>
+          <div class="highlight-box">
+            <h3>📱 No analytics or tracking</h3>
+            <p>
+              Azkar Fold does not use any third-party analytics, tracking tools, or advertising services. 
+              We believe your spiritual journey should be free from external monitoring or data collection.
+            </p>
+          </div>
+        </section>
+
+        <section class="privacy-section">
+          <h2>App Store Compliance</h2>
+          <p>
+            Azkar Fold fully complies with Apple's App Store privacy guidelines and requirements. 
+            Our app's privacy practices are transparent and designed with user privacy as the top priority.
+          </p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Data Security</h2>
+          <p>
+            Since all data remains on your device, your information is protected by your device's built-in 
+            security features, including:
+          </p>
+          <ul class="privacy-list">
+            <li>iOS/iPadOS system-level encryption</li>
+            <li>Your device's passcode and biometric protection</li>
+            <li>Secure local storage mechanisms</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Children's Privacy</h2>
+          <p>
+            Azkar Fold is safe for users of all ages. Since we don't collect any personal information, 
+            there are no privacy concerns related to children's data under COPPA or similar regulations.
+          </p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Changes to This Policy</h2>
+          <p>
+            If we ever update this Privacy Policy, we will notify users through the app and update 
+            the "Last updated" date above. However, our core commitment to not collecting personal 
+            data will remain unchanged.
+          </p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions about this Privacy Policy or our privacy practices, 
+            please contact us through our <a href="/contact">Contact Us</a> page.
+          </p>
+        </section>
+
+        <div class="privacy-footer">
+          <div class="trust-badge">
+            <div class="badge-icon">🛡️</div>
+            <div class="badge-content">
+              <strong>Privacy First</strong>
+              <p>Your spiritual practice, your privacy, our promise.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .privacy-page {
+    padding: calc(80px + var(--space-8)) 0 var(--space-8);
+    min-height: 100vh;
+    background-color: var(--color-gray-50);
+  }
+
+  .privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+    padding: var(--space-12);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .privacy-content h1 {
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-6);
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .last-updated {
+    text-align: center;
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-12);
+    padding: var(--space-4);
+    background-color: var(--color-gray-50);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-primary);
+  }
+
+  .privacy-section {
+    margin-bottom: var(--space-12);
+  }
+
+  .privacy-section h2 {
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-4);
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: var(--space-2);
+  }
+
+  .privacy-section h3 {
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-3);
+    font-size: 1.25rem;
+  }
+
+  .privacy-section p {
+    line-height: var(--line-height-body);
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-4);
+  }
+
+  .privacy-list {
+    margin: var(--space-4) 0;
+    padding-left: var(--space-6);
+  }
+
+  .privacy-list li {
+    margin-bottom: var(--space-2);
+    color: var(--color-gray-700);
+    line-height: var(--line-height-body);
+  }
+
+  .highlight-box {
+    background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary));
+    color: var(--color-white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    margin: var(--space-6) 0;
+  }
+
+  .highlight-box h3 {
+    color: var(--color-white);
+    margin-bottom: var(--space-3);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .highlight-box p {
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+  }
+
+  .privacy-footer {
+    margin-top: var(--space-16);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--color-gray-200);
+  }
+
+  .trust-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    background: linear-gradient(135deg, var(--color-success), var(--color-primary-light));
+    color: var(--color-white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    text-align: left;
+  }
+
+  .badge-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+  }
+
+  .badge-content strong {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: var(--space-1);
+  }
+
+  .badge-content p {
+    margin: 0;
+    opacity: 0.95;
+    font-size: 0.875rem;
+  }
+
+  .fade-in {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .privacy-page {
+      padding: calc(80px + var(--space-4)) 0 var(--space-4);
+    }
+
+    .privacy-content {
+      padding: var(--space-6);
+      margin: 0 var(--space-4);
+    }
+
+    .privacy-content h1 {
+      font-size: 2rem;
+    }
+
+    .trust-badge {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .badge-icon {
+      font-size: 3rem;
+    }
+  }
+</style>
+</Layout>
